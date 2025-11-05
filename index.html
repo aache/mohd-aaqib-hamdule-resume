@@ -1,0 +1,113 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohd Aaqib Hamdule — Resume</title>
+  <!-- Tailwind via CDN for quick build (suitable for GitHub Pages) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <div class="max-w-4xl mx-auto my-12 p-6">
+    <header class="flex items-center gap-6">
+      <div class="w-20 h-20 rounded-xl bg-gradient-to-br from-sky-100 to-indigo-50 flex items-center justify-center shadow">
+        <span class="text-2xl font-semibold text-indigo-700">AH</span>
+      </div>
+      <div>
+        <h1 class="text-2xl font-semibold">Mohd Aaqib Hamdule</h1>
+        <p class="mt-1 text-sm text-slate-600">Senior Associate — Cloud & Backend Engineer • 11+ years building scalable Java & AWS systems</p>
+        <div class="mt-3 flex flex-wrap gap-4 items-center text-sm">
+          <a class="text-indigo-600 hover:underline" href="mailto:aaqibhamdule@yahoo.com">aaqibhamdule@yahoo.com</a>
+          <span class="text-slate-500">•</span>
+          <span class="text-slate-600">+91 9082467823</span>
+          <span class="text-slate-500">•</span>
+          <span class="text-slate-600">Publicis Sapient</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- Left column: main content -->
+      <section class="lg:col-span-2 bg-white rounded-2xl shadow p-6">
+        <div class="prose prose-slate">
+          <h2 class="text-lg font-semibold">Professional Summary</h2>
+          <p>Seasoned backend and cloud engineer with 11+ years of experience designing and delivering resilient, high-throughput systems using Java (11/21), Spring Boot, Kafka, and AWS (EKS, Lambda, RDS). Strong background in observability (Grafana, Prometheus, Splunk), CI/CD (GitHub Actions / Jenkins), and container orchestration (Kubernetes/EKS).</p>
+
+          <h3 class="mt-4 font-semibold">Selected Projects</h3>
+
+          <article class="mt-3">
+            <h4 class="font-medium">PrecisionRx — Optum (Sept 2023 – Present)</h4>
+            <p class="text-sm text-slate-600">Java 21 · Spring Boot · Kafka · AWS EKS · Grafana</p>
+            <ul class="list-disc ml-5 mt-2 text-sm text-slate-700">
+              <li>Architected microservices on EKS with event-driven Kafka pipelines for real-time pricing and optimization.</li>
+              <li>Designed resilient API contracts and improved observability with Grafana and Prometheus.</li>
+            </ul>
+          </article>
+
+          <article class="mt-3">
+            <h4 class="font-medium">Phoenix Instrument Management — IG Group (Jun 2022 – Sept 2023)</h4>
+            <p class="text-sm text-slate-600">Java 11 · Spring Boot · Kafka</p>
+            <ul class="list-disc ml-5 mt-2 text-sm text-slate-700">
+              <li>Re-engineered reference data systems; created Avro schemas and optimized Kafka throughput for low-latency processing.</li>
+            </ul>
+          </article>
+
+          <article class="mt-3">
+            <h4 class="font-medium">BuyNearby — PayNearby (Jul 2021 – Jun 2022)</h4>
+            <p class="text-sm text-slate-600">Spring Boot · AWS S3 · SNS</p>
+            <ul class="list-disc ml-5 mt-2 text-sm text-slate-700">
+              <li>Built microservices-backed retail platform; led backend design and implemented TDD-based pipelines.</li>
+            </ul>
+          </article>
+
+          <h3 class="mt-5 font-semibold">Education</h3>
+          <p class="text-sm text-slate-700">Bachelor of Science — Computer Science, BNN College Bhiwandi (2014) · CGPA: 5.2</p>
+        </div>
+      </section>
+
+      <!-- Right column: sidebar -->
+      <aside class="space-y-6">
+        <div class="bg-white rounded-2xl shadow p-5">
+          <h3 class="text-sm font-semibold text-slate-700">Tech Stack</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <!-- chips -->
+            <span class="chip">Java 21</span>
+            <span class="chip">Spring Boot</span>
+            <span class="chip">AWS (EKS/Lambda)</span>
+            <span class="chip">Kafka</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">Docker</span>
+            <span class="chip">React</span>
+            <span class="chip">Grafana</span>
+            <span class="chip">Prometheus</span>
+            <span class="chip">Postgres</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">GitHub Actions</span>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow p-5">
+          <h3 class="text-sm font-semibold text-slate-700">Certifications</h3>
+          <div class="mt-2 text-sm text-slate-600">Oracle Certified Professional — Java 6</div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow p-5 text-sm">
+          <h3 class="text-sm font-semibold text-slate-700">Contact</h3>
+          <div class="mt-2">
+            <a class="text-indigo-600 hover:underline" href="mailto:aaqibhamdule@yahoo.com">aaqibhamdule@yahoo.com</a>
+            <div class="text-slate-600 mt-1">+91 9082467823</div>
+            <div class="mt-3 text-slate-400 text-xs">Resume source: Resume-Aaqib-Oct-2025.docx</div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="mt-8 text-center text-slate-500 text-sm">
+      <div>Designed & coded by a Senior Web Developer — responsive, accessible, and GitHub Pages ready.</div>
+      <div class="mt-2">To host: push <code>index.html</code> and <code>styles.css</code> to a GitHub repo and enable Pages.</div>
+    </footer>
+  </div>
+</body>
+</html>
