@@ -16,8 +16,36 @@
   <!-- Favicon (place your favicon.ico / icon files in repo) -->
   <link rel="icon" href="/favicon.ico" />
 
-  <!-- Minimal, purged CSS (production-compact) -->
+  <!-- Stylesheet (relative path) -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Extra fallback using repo-root-aware path for GitHub Pages in a repo named 'mohd-aaqib-hamdule-resume' -->
+  <link rel="stylesheet" href="/mohd-aaqib-hamdule-resume/styles.css">
+
+  <!-- Quick runtime check: if stylesheet fails to load, show a visible hint and log details to console -->
+  <script>
+    (function(){
+      function cssLoaded(){
+        var el = document.createElement('div');
+        el.style.display = 'none';
+        el.className = 'css-check';
+        document.documentElement.appendChild(el);
+        var computed = window.getComputedStyle ? getComputedStyle(el) : null;
+        // We expect .css-check to be display:none; if stylesheet missing, computed may be empty in some browsers
+        if(!computed || computed.display !== 'none'){
+          console.warn('styles.css appears not to be loaded. Check that styles.css is committed to the repo and available at /styles.css or /mohd-aaqib-hamdule-resume/styles.css');
+          var banner = document.createElement('div');
+          banner.style.background = '#fee2e2';
+          banner.style.color = '#7f1d1d';
+          banner.style.padding = '10px 12px';
+          banner.style.textAlign = 'center';
+          banner.style.fontFamily = 'system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial';
+          banner.textContent = 'Warning: site styles failed to load. Refresh, or ensure styles.css exists in the repo root.';
+          document.body.insertBefore(banner, document.body.firstChild);
+        }
+      }
+      if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', cssLoaded); else cssLoaded();
+    })();
+  </script>
 
   <!-- Analytics stub (replace 'G-XXXX' with your GA Measurement ID) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
@@ -113,6 +141,6 @@
     <div>Designed &amp; coded by a Senior Web Developer — optimized for accessibility, performance & recruiter scanning.</div>
     <div class="small muted">To host: push <code>index.html</code>, <code>styles.css</code>, <code>resume.pdf</code> and favicon files to your repo and enable GitHub Pages.</div>
   </footer>
-
 </body>
+  <!-- End of runtime CSS diagnostic block -->
 </html>
